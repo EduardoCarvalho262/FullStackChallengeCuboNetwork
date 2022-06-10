@@ -1,4 +1,4 @@
-namespace src;
+namespace CuboNetworkChallenge;
 
 public class WeatherForecast
 {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace src.Controllers;
+namespace CuboNetworkChallenge.Controllers;
 
 [ApiController]
 [Route("[controller]")]
