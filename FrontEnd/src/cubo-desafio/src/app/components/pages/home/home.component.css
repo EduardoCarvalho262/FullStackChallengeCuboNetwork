@@ -1,0 +1,25 @@
+.apresentation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.apresentation-container h2{
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.home-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    margin-top: 1em;
+    width: 25em;
+}
+
+td, th {
+    text-align: center;
+}
