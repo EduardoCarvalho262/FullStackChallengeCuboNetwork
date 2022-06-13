@@ -12,14 +12,15 @@
 
 .home-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
-table {
+.home-container table {
     margin-top: 1em;
+    height: 1em;
     width: 25em;
 }
 
-td, th {
+.home-container td, th {
     text-align: center;
 }

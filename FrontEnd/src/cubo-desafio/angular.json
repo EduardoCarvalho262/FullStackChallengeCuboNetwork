@@ -105,5 +105,7 @@
       }
     }
   },
-  "defaultProject": "cubo-desafio"
+  "cli": {
+    "analytics": "8bd7f364-6581-48fb-a84d-c70f1368c4ae"
+  }
 }

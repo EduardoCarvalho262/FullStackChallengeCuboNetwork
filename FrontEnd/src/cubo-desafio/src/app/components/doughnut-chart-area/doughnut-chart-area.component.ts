@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
-import { ChartType } from 'chart.js';
+import { ChartData, ChartEvent, ChartType } from 'chart.js';
 
 @Component({
   selector: 'app-doughnut-chart-area',
@@ -9,14 +9,24 @@ import { ChartType } from 'chart.js';
 })
 export class DoughnutChartAreaComponent implements OnInit {
 
-   // Doughnut
-   public doughnutChartLabels: Label[] = ['Download Sales', 'In-Store Sales', 'Mail-Order Sales'];
-   public doughnutChartData: MultiDataSet = [
-     [350, 450, 100],
-     [50, 150, 120],
-     [250, 130, 70],
-   ];
-   public doughnutChartType: ChartType = 'doughnut';
+  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales'];
+
+  public doughnutChartData: ChartData<'doughnut'> = {
+    labels: this.doughnutChartLabels,
+    datasets: [
+      { data: [ 50, 50 ] }
+    ]
+  };
+
+  public doughnutChartType: ChartType = 'doughnut';
+
+  public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
+
+  public chartHovered({ event, active }: { event: ChartEvent, active: {}[] }): void {
+    console.log(event, active);
+  }
 
   constructor() { }
 
