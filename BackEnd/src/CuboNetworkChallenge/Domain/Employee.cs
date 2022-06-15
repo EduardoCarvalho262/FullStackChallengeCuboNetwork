@@ -1,10 +1,11 @@
-﻿namespace CuboNetworkChallenge.Domain
+﻿
+namespace CuboNetworkChallenge.Domain
 {
-    public record Employee
+    public class Employee
     {
-        public Guid Id { get; }
-        public string? FirstName { get;}
-        public string? LastName { get;}
-        public int Participation { get;}
+        public int Id { get; set; }
+        public string? FirstName { get; set; }
+        public string? LastName { get; set;}
+        public int Participation { get; set;}
     }
 }

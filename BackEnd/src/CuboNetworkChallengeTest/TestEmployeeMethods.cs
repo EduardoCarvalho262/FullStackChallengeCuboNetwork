@@ -1,5 +1,7 @@
+using CuboNetworkChallenge.Dto;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
+using System.Net;
 using System.Net.Http.Json;
 
 namespace CuboNetworkChallengeTest
@@ -30,11 +32,13 @@ namespace CuboNetworkChallengeTest
             using var client = application.CreateClient();
 
             //Act
-            var response = await client.GetStringAsync("/employee");
+            var response = await client.GetAsync("/employee");
+
+   
 
             //Assert
             Assert.IsNotNull(response);
-            Assert.IsTrue(response.Count() >= 0);
+            Assert.AreEqual(HttpStatusCode.OK, response.StatusCode);
         }
 
         [TestMethod]
@@ -50,7 +54,7 @@ namespace CuboNetworkChallengeTest
 
             //Assert
             Assert.IsNotNull(response);
-            Assert.AreEqual(request.Id, response.Id);
+            Assert.AreEqual(request.Id, response);
         }
     }
 }
