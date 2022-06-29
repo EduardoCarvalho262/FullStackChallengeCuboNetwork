@@ -1,3 +1,4 @@
+using CuboNetworkChallenge.Domain;
 using CuboNetworkChallenge.Dto;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Microsoft.VisualStudio.TestPlatform.TestHost;
@@ -47,14 +48,17 @@ namespace CuboNetworkChallengeTest
             //Arrange
             await using var application = new WebApplicationFactory<Program>();
             using var client = application.CreateClient();
-            var request = new EmployeeDto();
+            var request = new Employee();
+            request.FirstName = "Teste";
+            request.LastName = "Teste";
+            request.Participation = 5;
 
             //Act
             var response = await client.PostAsJsonAsync("/employee", request);
 
             //Assert
             Assert.IsNotNull(response);
-            Assert.AreEqual(request.Id, response);
+            Assert.AreEqual(HttpStatusCode.Created, response.StatusCode);
         }
     }
 }
