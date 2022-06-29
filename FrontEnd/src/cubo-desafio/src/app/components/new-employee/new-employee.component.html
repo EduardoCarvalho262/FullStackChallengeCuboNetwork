@@ -1,0 +1,8 @@
+<form (ngSubmit)="submit()" [formGroup]="employeeForm" #formDir="ngForm">
+    <input type="hidden" formControlName="id" />
+    <input type="text" placeholder="First Name" formControlName="firstName" required />
+    <input type="text" placeholder="Last Name" formControlName="lastName" required />
+    <input type="text" placeholder="Participation" formControlName="participation" required />
+
+    <input type="submit" class="btn btn-outline-info button-color" value="SEND">
+</form> 

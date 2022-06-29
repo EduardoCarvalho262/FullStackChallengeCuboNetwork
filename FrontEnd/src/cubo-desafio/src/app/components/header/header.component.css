@@ -5,20 +5,3 @@
     background-color: #00b8e2;
     min-height: 16vh;
 }
-
-.header-container input[type= "text"]{
-    margin-right: 2em;
-    border: none;
-    border-radius: 3px;
-    padding: 7px;
-    width: 15em;
-}
-
-.button-color {
-    color: white;
-    font-weight: bold;
-    border-color: white;
-    border-width: 2px;
-    width: 8em;
-    height: 45px;
-}

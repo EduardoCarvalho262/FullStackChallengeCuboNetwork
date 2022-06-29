@@ -1,9 +1,4 @@
 <div class="header-container">
-    <form action="" class="">
-        <input type="text" placeholder="First Name" required />
-        <input type="text" placeholder="Last Name" required />
-        <input type="text" placeholder="Participation" required />
-        <input type="submit" class="btn btn-outline-info button-color" value="SEND">
-    </form> 
+    <app-new-employee (onSubmit)="createHandler($event)"></app-new-employee>
 </div>
 

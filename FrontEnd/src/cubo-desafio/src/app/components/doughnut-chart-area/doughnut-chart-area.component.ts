@@ -1,6 +1,11 @@
-import { Component, OnInit } from '@angular/core';
 
-import { ChartData, ChartEvent, ChartType } from 'chart.js';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { Employee } from 'app/Employee';
+import { EmployeeService } from 'app/services/employee.service';
+
+import {ChartData, ChartEvent} from 'chart.js';
+import { BaseChartDirective } from 'ng2-charts';
+
 
 @Component({
   selector: 'app-doughnut-chart-area',
@@ -9,16 +14,26 @@ import { ChartData, ChartEvent, ChartType } from 'chart.js';
 })
 export class DoughnutChartAreaComponent implements OnInit {
 
-  public doughnutChartLabels: string[] = [ 'Download Sales', 'In-Store Sales'];
+  @ViewChild(BaseChartDirective) chart!: BaseChartDirective;
+
+  public doughnutChartLabels: string[] = [];
+  public participation: number[] = [];
+  employeeS: Employee[] = []
 
   public doughnutChartData: ChartData<'doughnut'> = {
     labels: this.doughnutChartLabels,
-    datasets: [
-      { data: [ 50, 50 ] }
-    ]
+    datasets: [{
+      data: this.participation
+    }]
   };
 
-  public doughnutChartType: ChartType = 'doughnut';
+  constructor(private employeeService: EmployeeService) { }
+
+  ngOnInit(): void {
+    this.getData();
+  }
+
+
 
   public chartClicked({ event, active }: { event: ChartEvent, active: {}[] }): void {
     console.log(event, active);
@@ -28,10 +43,14 @@ export class DoughnutChartAreaComponent implements OnInit {
     console.log(event, active);
   }
 
-  constructor() { }
 
-  ngOnInit(): void {
+  getData(){
+    this.employeeService.getEmployees().subscribe((items) => {
+      items.forEach(item => {
+        this.doughnutChartLabels.push(item.firstName);
+        this.participation.push(item.participation);
+        this.chart.chart?.update();
+      })
+    });
   }
-
-
 }
