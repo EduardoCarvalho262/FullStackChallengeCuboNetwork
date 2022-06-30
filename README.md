@@ -53,7 +53,7 @@ O projeto está finalizando e sendo revisitado para futuras melhorias.
 * [Angular](https://angular.io) - O framework web usado.
 * [.NET Core](https://dotnet.microsoft.com/en-us/download) - O framework backend usado.
 * [Bootstrap](https://getbootstrap.com/) - Framework para estilização das páginas.
-* [Conventional Commitsi](https://www.conventionalcommits.org/en/v1.0.0/) - Convenção de estrutura de commits.
+* [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - Convenção de estrutura de commits.
 
 
 ## 📌 Versão
