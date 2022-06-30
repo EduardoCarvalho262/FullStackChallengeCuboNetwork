@@ -63,8 +63,8 @@ O projeto está finalizando e sendo revisitado para futuras melhorias.
 
 ## ✒️ Autores
 
-* **Desenvolvedor** - *Desenvolvedor Principal* - [Desenvolvedor](https://github.com/eduardo-carvalho-estudante)
-* **Eduardo** - *Documentação* - [Eduardo](https://github.com/eduardo-carvalho-estudante)
+* **Desenvolvedor** - *Desenvolvedor Principal* - [Desenvolvedor](https://www.linkedin.com/in/eduardo-carvalho-576075180/)
+* **Eduardo** - *Documentação* - [Eduardo](https://www.linkedin.com/in/eduardo-carvalho-576075180/)
 
 
 ## 📄 Licença
