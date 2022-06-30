@@ -54,6 +54,7 @@ O projeto está finalizando e sendo revisitado para futuras melhorias.
 * [.NET Core](https://dotnet.microsoft.com/en-us/download) - O framework backend usado.
 * [Bootstrap](https://getbootstrap.com/) - Framework para estilização das páginas.
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - Convenção de estrutura de commits.
+* [Git](https://git-scm.com) - Controle de Versão.
 
 
 ## 📌 Versão
