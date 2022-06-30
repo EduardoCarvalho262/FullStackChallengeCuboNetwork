@@ -17,7 +17,6 @@ Tecnologias que você precisa ter instalado para executar o projeto:
 ```
 Node.js - 16.15.0 ou acima
 ```
-
 ### 🔧 Execução do Projeto
 
 1- No projeto de frontend executar um npm install para instalar todos os pacotes:
