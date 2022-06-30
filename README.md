@@ -55,6 +55,8 @@ O projeto está finalizando e sendo revisitado para futuras melhorias.
 * [Bootstrap](https://getbootstrap.com/) - Framework para estilização das páginas.
 * [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) - Convenção de estrutura de commits.
 * [Git](https://git-scm.com) - Controle de Versão.
+* [Visual Studio Code]([https://git-scm.com](https://visualstudio.microsoft.com/pt-br/)) - Editor de texto utilizado.
+* [Visual Studio Community 2022](https://visualstudio.microsoft.com/pt-br/) - IDE utilizada.
 
 
 ## 📌 Versão
